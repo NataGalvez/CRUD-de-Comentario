@@ -14,8 +14,10 @@ export class AppComponent {
     this.selectedComments = comment;
   }
   addOrEdit() {
-    this.selectedComments.id = this.commentsArr.length + 1;
-    this.commentsArr.push(this.selectedComments);
+    if (this.selectedComments.id === 0) {
+      this.selectedComments.id = this.commentsArr.length + 1;
+      this.commentsArr.push(this.selectedComments);
+    }
     this.selectedComments = new Comments();
   }
 
