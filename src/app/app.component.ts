@@ -16,6 +16,7 @@ export class AppComponent {
   addOrEdit() {
     this.selectedComments.id = this.commentsArr.length + 1;
     this.commentsArr.push(this.selectedComments);
+    this.selectedComments = new Comments();
   }
 
   delete() {
