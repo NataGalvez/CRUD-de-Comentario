@@ -7,10 +7,10 @@
         </div>
         <div class="form-group">
           <textarea
-            [(ngModel)]="selectedComments.name"
+            [(ngModel)]="selectedComments.comment"
             placeholder="Igrese Comentario"
             class="form-control"
-            cols="50"
+            cols="100"
             rows="10"
           ></textarea>
         </div>
@@ -29,9 +29,8 @@
           *ngFor="let comment of commentsArr"
           class="list-group-item list-group-item-action"
           (click)="openForEdit(comment)"
-          [class.active]="comment == selectedComments"
         >
-          {{ comment.name }}
+          {{ comment.comment }}
         </li>
       </ul>
     </div>

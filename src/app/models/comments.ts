@@ -1,4 +1,3 @@
 export class Comments {
-  name: string;
-  comments: string;
+  comment: string;
 }

@@ -15,7 +15,6 @@ export class AppComponent {
   }
   addOrEdit() {
     this.commentsArr.push(this.selectedComments);
-    // this.selectedComments = new Comments();
   }
 
   delete() {
