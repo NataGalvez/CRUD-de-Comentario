@@ -22,6 +22,7 @@ export class AppComponent {
   }
 
   delete() {
+    this.commentsArr = this.commentsArr.filter(x => x != this.selectedComments);
     this.selectedComments = new Comments();
   }
 }
